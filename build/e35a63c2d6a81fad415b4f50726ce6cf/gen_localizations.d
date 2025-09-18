@@ -1,0 +1,1 @@
+ /home/ottafa/Dev/Kohi-Manager/lib/l10n/app_localizations_en.dart /home/ottafa/Dev/Kohi-Manager/lib/l10n/app_localizations.dart:  /home/ottafa/Dev/Kohi-Manager/l10n.yaml /home/ottafa/Dev/Kohi-Manager/lib/l10n/intl_en.arb
