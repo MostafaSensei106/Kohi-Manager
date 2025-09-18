@@ -274,5 +274,3 @@ See the [LICENSE](LICENSE) file for full details.
   Made with ❤️
   by <a href="https://github.com/MostafaSensei106">Mostafa Sensei106</a>
 </p>
-
-/*******  71aa2850-5330-4b34-9ba1-417627ff87ae  *******/z
