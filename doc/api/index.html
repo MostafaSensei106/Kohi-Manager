@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="kohi_manager API docs, for the Dart programming language.">
+  <title>kohi_manager - Dart API docs</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static-assets/github.css?v1">
+  <link rel="stylesheet" href="static-assets/styles.css?v1">
+  <link rel="icon" href="static-assets/favicon.png?v1">
+  
+</head>
+
+<body data-base-href="" data-using-base-href="false" class="light-theme">
+<div id="overlay-under-drawer"></div>
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li class="self-crumb">kohi_manager package</li>
+  </ol>
+  <div class="self-name">kohi_manager</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <button class="toggle" id="theme-button" title="Toggle between light and dark mode" aria-label="Light and dark mode toggle">
+    <span id="dark-theme-button" class="material-symbols-outlined" aria-hidden="true">
+      dark_mode
+    </span>
+    <span id="light-theme-button" class="material-symbols-outlined" aria-hidden="true">
+      light_mode
+    </span>
+  </button>
+</header>
+<main>
+  <div id="dartdoc-main-content" class="main-content">
+      
+<section class="desc markdown">
+  <h1 align="center">Kohi Manager</h1>
+<p align="center">
+  <img src="https://socialify.git.ci/MostafaSensei106/Kohi-Manager/image?custom_language=Flutter&amp;font=KoHo&amp;language=1&amp;logo=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F138288138%3Fv%3D4&amp;name=1&amp;owner=1&amp;pattern=Floating+Cogs&amp;theme=Light" alt="Kohi Manager Logo">
+</p>
+<p align="center">
+  <strong>A modern, feature-rich café management mobile app built with Flutter &amp; BLoC.</strong><br>
+  Efficient. Smart. User-friendly. All in your pocket.
+</p>
+<p align="center">
+  <a href="#about">About</a> •
+  <a href="#features">Features</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#architecture">Architecture</a> •
+  <a href="#technologies">Technologies</a> •
+  <a href="#contributing">Contributing</a> •
+  <a href="#license">License</a>
+</p>
+<hr>
+<h2 id="about">About</h2>
+<p>Welcome to <strong>Smart Ahwa Manager</strong> — a comprehensive café management solution built for the modern Egyptian ahwa owner.
+This Flutter application streamlines daily operations with intelligent order management, real-time analytics, and intuitive design. Whether you're managing a bustling downtown café or a cozy neighborhood ahwa, Smart Ahwa Manager handles it all with elegance and efficiency.</p>
+<p>Perfect for Cairo's vibrant café culture, supporting traditional drinks like shai, Turkish coffee, and hibiscus tea with Egyptian charm and hospitality.</p>
+<hr>
+<h2 id="features">Features</h2>
+<h3 id="-core-functionality">🌟 Core Functionality</h3>
+<ul>
+<li><strong>Order Management</strong>: Add, track, and complete customer orders seamlessly</li>
+<li><strong>Multi-drink Support</strong>: Shai, Turkish coffee, hibiscus tea, and more</li>
+<li><strong>Real-time Dashboard</strong>: Live view of pending orders with timestamps</li>
+<li><strong>Smart Instructions</strong>: Custom order notes like "extra mint, ya rais!"</li>
+<li><strong>One-tap Completion</strong>: Mark orders as done with single button press</li>
+</ul>
+<h3 id="-advanced-analytics">📊 Advanced Analytics</h3>
+<ul>
+<li><strong>Daily Sales Reports</strong>: Comprehensive revenue and order statistics</li>
+<li><strong>Top-selling Drinks</strong>: Visual insights into customer preferences</li>
+<li><strong>Revenue Tracking</strong>: Real-time financial summaries</li>
+<li><strong>Performance Metrics</strong>: Order completion rates and trends</li>
+<li><strong>Export Capabilities</strong>: Generate reports for business analysis</li>
+</ul>
+<h3 id="-modern-uiux">🎨 Modern UI/UX</h3>
+<ul>
+<li><strong>Material Design 3</strong>: Clean, intuitive interface with Egyptian aesthetics</li>
+<li><strong>Dark/Light Themes</strong>: Comfortable viewing in any lighting condition</li>
+<li><strong>Responsive Design</strong>: Optimized for phones and tablets</li>
+<li><strong>Smooth Animations</strong>: Delightful micro-interactions throughout</li>
+<li><strong>Accessibility</strong>: Screen reader support and high contrast modes</li>
+</ul>
+<h3 id="-technical-excellence">🔧 Technical Excellence</h3>
+<ul>
+<li><strong>SOLID Principles</strong>: Maintainable, extensible codebase</li>
+<li><strong>MVVM Architecture</strong>: Clean separation of concerns</li>
+<li><strong>BLoC State Management</strong>: Reactive, predictable state handling</li>
+<li><strong>Object-Oriented Design</strong>: Inheritance, polymorphism, and encapsulation</li>
+<li><strong>Type Safety</strong>: Comprehensive null safety implementation</li>
+</ul>
+<hr>
+<h2 id="installation">Installation</h2>
+<h2 id="-quick-setup">📦 Quick Setup</h2>
+<div class="markdown-alert markdown-alert-important">
+<p class="markdown-alert-title">Important</p>
+<p>Flutter SDK version 3.10+ is required.
+Android Studio or VS Code with Flutter extensions recommended.</p>
+</div>
+<h3 id="-prerequisites">🛠️ Prerequisites</h3>
+<p>Before you begin, ensure you have:</p>
+<ul>
+<li><a href="https://flutter.dev/docs/get-started/install">Flutter SDK</a> (3.10+)</li>
+<li><a href="https://developer.android.com/studio">Android Studio</a> or <a href="https://code.visualstudio.com/">VS Code</a></li>
+<li>Git installed on your system</li>
+</ul>
+<h3 id="-for-android-development">📱 For Android Development</h3>
+<pre class="language-bash"><code class="language-bash"># Clone the repository
+git clone https://github.com/MostafaSensei106/Kohi-Manager.git
+
+cd Kohi-Manager
+
+# Install dependencies
+flutter pub get
+
+# Run on connected device or emulator
+flutter run
+</code></pre>
+<hr>
+<h2 id="-quick-start">🚀 Quick Start</h2>
+<h3 id="-adding-your-first-order">📋 Adding Your First Order</h3>
+<ol>
+<li>Open the app and navigate to "Add Order"</li>
+<li>Enter customer name (e.g., "Ahmed")</li>
+<li>Select drink type (Shai, Turkish Coffee, etc.)</li>
+<li>Add special instructions if needed</li>
+<li>Tap "Add Order" to submit</li>
+</ol>
+<h3 id="-viewing-dashboard">📊 Viewing Dashboard</h3>
+<ol>
+<li>Navigate to "Dashboard" tab</li>
+<li>See all pending orders in real-time</li>
+<li>Tap "Mark as Completed" when order is ready</li>
+<li>Watch your efficiency metrics update</li>
+</ol>
+<h3 id="-generating-reports">📈 Generating Reports</h3>
+<ol>
+<li>Go to "Reports" tab</li>
+<li>View today's sales summary automatically</li>
+<li>Check top-selling drinks and revenue</li>
+<li>Use insights to optimize your menu</li>
+</ol>
+<hr>
+<h2 id="architecture">Architecture</h2>
+<p>Smart Ahwa Manager follows clean architecture principles with clear separation of concerns:</p>
+<h3 id="-mvvm--bloc-pattern">🏗️ MVVM + BLoC Pattern</h3>
+<pre class="language-dart"><code>┌─ Presentation Layer ─┐
+│  ├─ Views (Screens)  │
+│  └─ ViewModels (BLoC)│
+├─ Business Layer ─────┤
+│  ├─ Models          │
+│  └─ Services        │
+└─ Data Layer ─────────┘
+   ├─ Repositories
+   └─ Data Sources
+</code></pre>
+<h3 id="-solid-principles-implementation">🎯 SOLID Principles Implementation</h3>
+<table>
+<thead>
+<tr>
+<th>Principle</th>
+<th>Implementation</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Single Responsibility</strong></td>
+<td>Each class has one clear purpose</td>
+<td><code>OrderService</code> only handles data operations</td>
+</tr>
+<tr>
+<td><strong>Open/Closed</strong></td>
+<td>Easy to extend without modification</td>
+<td>Add new drink types by extending <code>Drink</code> class</td>
+</tr>
+<tr>
+<td><strong>Dependency Inversion</strong></td>
+<td>Depend on abstractions, not concretions</td>
+<td><code>OrderBloc</code> uses <code>OrderRepository</code> interface</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-key-components">🧩 Key Components</h3>
+<ul>
+<li><strong>Models</strong>: <code>Order</code>, <code>Drink</code> hierarchy with inheritance</li>
+<li><strong>Services</strong>: <code>OrderService</code> implementing repository pattern</li>
+<li><strong>BLoC</strong>: <code>OrderBloc</code> for reactive state management</li>
+<li><strong>Views</strong>: Responsive UI components with modern design</li>
+</ul>
+<hr>
+<h2 id="-usage-examples">📋 Usage Examples</h2>
+<h3 id="-basic-caf-operations">🏪 Basic Café Operations</h3>
+<pre class="language-dart"><code class="language-dart">// Adding a traditional shai order
+final order = Order(
+  customerName: "Om Ahmed",
+  drink: Shai(),
+  specialInstructions: "extra sugar, ya rais",
+  orderTime: DateTime.now(),
+);
+</code></pre>
+<h3 id="-advanced-analytics-2">📊 Advanced Analytics</h3>
+<pre class="language-dart"><code class="language-dart">// Generate daily sales report
+final report = orderService.generateDailyReport(DateTime.now());
+print('Total Revenue: ${report.totalRevenue} LE');
+print('Top Drink: ${report.topSellingDrink}');
+</code></pre>
+<h3 id="-custom-drink-types">🎨 Custom Drink Types</h3>
+<pre class="language-dart"><code class="language-dart">// Extend the app with new beverages
+class MintTea extends Drink {
+  const MintTea() : super(name: 'Mint Tea', price: 2.5);
+
+  @override
+  String getDescription() =&gt; 'Fresh mint leaves tea';
+}
+</code></pre>
+<hr>
+<h2 id="technologies">Technologies</h2>
+<table>
+<thead>
+<tr>
+<th>Technology</th>
+<th>Description</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🎯 <strong>Flutter</strong></td>
+<td><a href="https://flutter.dev">flutter.dev</a></td>
+<td>Cross-platform UI framework</td>
+</tr>
+<tr>
+<td>🏗️ <strong>BLoC Pattern</strong></td>
+<td><a href="https://bloc.dev">bloc.dev</a></td>
+<td>Predictable state management</td>
+</tr>
+<tr>
+<td>📱 <strong>Dart</strong></td>
+<td><a href="https://dart.dev">dart.dev</a></td>
+<td>Programming language</td>
+</tr>
+<tr>
+<td>🎨 <strong>Material Design 3</strong></td>
+<td><a href="https://m3.material.io">m3.material.io</a></td>
+<td>Modern UI components</td>
+</tr>
+<tr>
+<td>🔧 <strong>Equatable</strong></td>
+<td><a href="https://pub.dev/packages/equatable">pub.dev/packages/equatable</a></td>
+<td>Value equality comparisons</td>
+</tr>
+<tr>
+<td>📅 <strong>Intl</strong></td>
+<td><a href="https://pub.dev/packages/intl">pub.dev/packages/intl</a></td>
+<td>Internationalization support</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="development">Development</h2>
+<h3 id="-running-tests">🧪 Running Tests</h3>
+<pre class="language-bash"><code class="language-bash"># Run unit tests
+flutter test
+
+# Run integration tests
+flutter test integration_test/
+
+# Generate coverage report
+flutter test --coverage
+</code></pre>
+<h3 id="-code-quality">🔧 Code Quality</h3>
+<pre class="language-bash"><code class="language-bash"># Format code
+flutter format .
+
+# Analyze code
+flutter analyze
+
+# Check for outdated dependencies
+flutter pub outdated
+</code></pre>
+<h3 id="-building-for-production">📱 Building for Production</h3>
+<pre class="language-bash"><code class="language-bash"># Build Android APK
+flutter build apk --release
+</code></pre>
+<hr>
+<h2 id="contributing">Contributing</h2>
+<p>Contributions are welcome! Here's how to get started:</p>
+<ol>
+<li><strong>Fork</strong> the repository</li>
+<li><strong>Create</strong> a feature branch:
+<pre class="language-bash"><code class="language-bash">git checkout -b feature/amazing-feature
+</code></pre>
+</li>
+<li><strong>Commit</strong> your changes:
+<pre class="language-bash"><code class="language-bash">git commit -m "Add amazing feature"
+</code></pre>
+</li>
+<li><strong>Push</strong> to your branch:
+<pre class="language-bash"><code class="language-bash">git push origin feature/amazing-feature
+</code></pre>
+</li>
+<li><strong>Open</strong> a pull request</li>
+</ol>
+<h3 id="-contribution-guidelines">📝 Contribution Guidelines</h3>
+<ul>
+<li>Follow Flutter's official style guide</li>
+<li>Write tests for new features</li>
+<li>Update documentation as needed</li>
+<li>Ensure all tests pass before submitting</li>
+<li>Use conventional commit messages</li>
+</ul>
+<blockquote>
+<p>💡 Please open an issue first for major feature ideas or architectural changes.</p>
+</blockquote>
+<hr>
+<h2 id="license">License</h2>
+<p>This project is licensed under the <strong>MIT License</strong>.
+See the <a href="LICENSE">LICENSE</a> file for full details.</p>
+<hr>
+<p align="center">
+  Made with ❤️
+  by <a href="https://github.com/MostafaSensei106">Mostafa Sensei106</a>
+</p>
+</section>
+
+
+      <section class="summary">
+          <h2>Libraries</h2>
+        <dl>
+          <dt id="app_constants">
+  <span class="name"><a href="core_config_constants_app_constants/">core/config/constants/app_constants</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="app_enums">
+  <span class="name"><a href="core_config_constants_app_enums/">core/config/constants/app_enums</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="shared_preferences_keys">
+  <span class="name"><a href="core_config_constants_shared_preferences_keys/">core/config/constants/shared_preferences_keys</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="app_text_style">
+  <span class="name"><a href="core_config_fonts_app_text_style/">core/config/fonts/app_text_style</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="dark_theme">
+  <span class="name"><a href="core_config_theme_color_dark_theme/">core/config/theme/color/dark_theme</a></span> 
+
+</dt>
+<dd>Contains the dark theme configuration for the TakyeebBak app.
+</dd>
+
+          <dt id="light_theme">
+  <span class="name"><a href="core_config_theme_color_light_theme/">core/config/theme/color/light_theme</a></span> 
+
+</dt>
+<dd>Contains the light theme configuration for the TakyeebBak app.
+</dd>
+
+          <dt id="network_controller">
+  <span class="name"><a href="core_config_theme_controllers_network_controller_network_controller/">core/config/theme/controllers/network_controller/network_controller</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="no_routes_error">
+  <span class="name"><a href="core_error_no_routes_error/">core/error/no_routes_error</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="screen_error">
+  <span class="name"><a href="core_error_screen_error/">core/error/screen_error</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="date_format_extension">
+  <span class="name"><a href="core_extensions_date_format_extension/">core/extensions/date_format_extension</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="navigetion_extensions">
+  <span class="name"><a href="core_extensions_navigetion_extensions/">core/extensions/navigetion_extensions</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="font_weight_helper">
+  <span class="name"><a href="core_helpers_font_weight_helper/">core/helpers/font_weight_helper</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="formating">
+  <span class="name"><a href="core_helpers_formating/">core/helpers/formating</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="locals_cubit">
+  <span class="name"><a href="core_locals_logic_cubit_locals_cubit/">core/locals/logic/cubit/locals_cubit</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="order_bloc">
+  <span class="name"><a href="core_logic_order_order_bloc/">core/logic/order/order_bloc</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="order_event">
+  <span class="name"><a href="core_logic_order_order_event/">core/logic/order/order_event</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="theme_cubit">
+  <span class="name"><a href="core_logic_theme_cubit_theme_cubit/">core/logic/theme/cubit/theme_cubit</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="theme_shared_preferences">
+  <span class="name"><a href="core_logic_theme_cubit_theme_shared_preferences/">core/logic/theme/cubit/theme_shared_preferences</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="theme_state">
+  <span class="name"><a href="core_logic_theme_cubit_theme_state/">core/logic/theme/cubit/theme_state</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="theme_toggle_helper">
+  <span class="name"><a href="core_logic_theme_helper_theme_toggle_helper/">core/logic/theme/helper/theme_toggle_helper</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="drink">
+  <span class="name"><a href="core_models_drink_drink/">core/models/drink/drink</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="drinks">
+  <span class="name"><a href="core_models_drink_drinks/">core/models/drink/drinks</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="order">
+  <span class="name"><a href="core_models_order_order/">core/models/order/order</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="order_state">
+  <span class="name"><a href="core_models_order_order_state/">core/models/order/order_state</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="sales_report">
+  <span class="name"><a href="core_models_sales_report_sales_report/">core/models/sales_report/sales_report</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="app_router">
+  <span class="name"><a href="core_routing_app_router/">core/routing/app_router</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="routes">
+  <span class="name"><a href="core_routing_routes/">core/routing/routes</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="order_repo">
+  <span class="name"><a href="core_services_order_repo_order_repo/">core/services/order_repo/order_repo</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="url_run_services">
+  <span class="name"><a href="core_services_url_run_services_url_run_services/">core/services/url_run_services/url_run_services</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="shared_preferences_global">
+  <span class="name"><a href="core_shared_preferences_global_shared_preferences_global/">core/shared_preferences_global/shared_preferences_global</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="action_drawer_icons">
+  <span class="name"><a href="core_widgets_app_bar_components_action_drawer_icons/">core/widgets/app_bar_components/action_drawer_icons</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="app_bar">
+  <span class="name"><a href="core_widgets_app_bar_components_app_bar/">core/widgets/app_bar_components/app_bar</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="side_page_app_bar">
+  <span class="name"><a href="core_widgets_app_bar_components_side_page_app_bar/">core/widgets/app_bar_components/side_page_app_bar</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="sliver_app_bar_component">
+  <span class="name"><a href="core_widgets_app_bar_components_sliver_app_bar_component/">core/widgets/app_bar_components/sliver_app_bar_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="app_container_component">
+  <span class="name"><a href="core_widgets_app_container_component_app_container_component/">core/widgets/app_container_component/app_container_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="full_app_divider_components">
+  <span class="name"><a href="core_widgets_app_divider_components_full_app_divider_components/">core/widgets/app_divider_components/full_app_divider_components</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="drawer">
+  <span class="name"><a href="core_widgets_app_drawer_drawer/">core/widgets/app_drawer/drawer</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="app_toast">
+  <span class="name"><a href="core_widgets_app_toast_app_toast/">core/widgets/app_toast/app_toast</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="elevated_button_component">
+  <span class="name"><a href="core_widgets_button_components_elevated_button_components_elevated_button_component/">core/widgets/button_components/elevated_button_components/elevated_button_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="elevated_button_icon_component">
+  <span class="name"><a href="core_widgets_button_components_elevated_button_components_elevated_button_icon_component/">core/widgets/button_components/elevated_button_components/elevated_button_icon_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="elevated_outline_button_component">
+  <span class="name"><a href="core_widgets_button_components_elevated_button_components_elevated_outline_button_component/">core/widgets/button_components/elevated_button_components/elevated_outline_button_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="filled_button_icon_component">
+  <span class="name"><a href="core_widgets_button_components_filled_button_components_filled_button_icon_component/">core/widgets/button_components/filled_button_components/filled_button_icon_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="icon_button_component">
+  <span class="name"><a href="core_widgets_button_components_icon_button_components_icon_button_component/">core/widgets/button_components/icon_button_components/icon_button_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="icon_button_filled_component">
+  <span class="name"><a href="core_widgets_button_components_icon_button_components_icon_button_filled_component/">core/widgets/button_components/icon_button_components/icon_button_filled_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="icon_button_filledtonal_component">
+  <span class="name"><a href="core_widgets_button_components_icon_button_components_icon_button_filledtonal_component/">core/widgets/button_components/icon_button_components/icon_button_filledtonal_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="icon_button_outline_component">
+  <span class="name"><a href="core_widgets_button_components_icon_button_components_icon_button_outline_component/">core/widgets/button_components/icon_button_components/icon_button_outline_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="side_page_app_bar_icon_button">
+  <span class="name"><a href="core_widgets_button_components_icon_button_components_side_page_app_bar_icon_button/">core/widgets/button_components/icon_button_components/side_page_app_bar_icon_button</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="text_button_component">
+  <span class="name"><a href="core_widgets_button_components_text_button_components_text_button_component/">core/widgets/button_components/text_button_components/text_button_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="text_button_icon_component">
+  <span class="name"><a href="core_widgets_button_components_text_button_components_text_button_icon_component/">core/widgets/button_components/text_button_components/text_button_icon_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="d">
+  <span class="name"><a href="core_widgets_d/">core/widgets/d</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="dropdown_button_form_field_component">
+  <span class="name"><a href="core_widgets_dropdown_button_form_field_components_dropdown_button_form_field_component/">core/widgets/dropdown_button_form_field_components/dropdown_button_form_field_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="list_tile_component">
+  <span class="name"><a href="core_widgets_list_tile_components_list_tile_component/">core/widgets/list_tile_components/list_tile_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="list_tile_icon_component">
+  <span class="name"><a href="core_widgets_list_tile_components_list_tile_icon_component/">core/widgets/list_tile_components/list_tile_icon_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="list_tile_widget_component">
+  <span class="name"><a href="core_widgets_list_tile_components_list_tile_widget_component/">core/widgets/list_tile_components/list_tile_widget_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="profile_page_item_component">
+  <span class="name"><a href="core_widgets_profile_page_item_component_profile_page_item_component/">core/widgets/profile_page_item_component/profile_page_item_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="searchbar_component">
+  <span class="name"><a href="core_widgets_searchbar_component_searchbar_component/">core/widgets/searchbar_component/searchbar_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="svg_component">
+  <span class="name"><a href="core_widgets_svg_component_svg_component/">core/widgets/svg_component/svg_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="text_form_field_component">
+  <span class="name"><a href="core_widgets_text_form_field_components_text_form_field_component/">core/widgets/text_form_field_components/text_form_field_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="textfield_component">
+  <span class="name"><a href="core_widgets_textfield_components_textfield_component/">core/widgets/textfield_components/textfield_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="textfield_password_component">
+  <span class="name"><a href="core_widgets_textfield_components_textfield_password_component/">core/widgets/textfield_components/textfield_password_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="textfield_phone_component">
+  <span class="name"><a href="core_widgets_textfield_components_textfield_phone_component/">core/widgets/textfield_components/textfield_phone_component</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="kohi_manager_app">
+  <span class="name"><a href="kohi_manager_app/">kohi_manager_app</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="app_localizations">
+  <span class="name"><a href="l10n_app_localizations/">l10n/app_localizations</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="app_localizations_en">
+  <span class="name"><a href="l10n_app_localizations_en/">l10n/app_localizations_en</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="main">
+  <span class="name"><a href="main/">main</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="add_order_screen">
+  <span class="name"><a href="mod_add_order_screen_add_order_screen/">mod/add_order_screen/add_order_screen</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="kohi_main_screen">
+  <span class="name"><a href="mod_kohi_main_screen_page_kohi_main_screen/">mod/kohi_main_screen/page/kohi_main_screen</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="order_dash_board">
+  <span class="name"><a href="mod_order_dash_board_order_dash_board/">mod/order_dash_board/order_dash_board</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="order_card">
+  <span class="name"><a href="mod_order_dash_board_widgets_order_card/">mod/order_dash_board/widgets/order_card</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="report_screen">
+  <span class="name"><a href="mod_report_screen_report_screen/">mod/report_screen/report_screen</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="drink_stats_card">
+  <span class="name"><a href="mod_report_screen_widgets_drink_stats_card/">mod/report_screen/widgets/drink_stats_card</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="report_card">
+  <span class="name"><a href="mod_report_screen_widgets_report_card/">mod/report_screen/widgets/report_card</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+        </dl>
+      </section>
+  </div> <!-- /.main-content -->
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li class="self-crumb">kohi_manager package</li>
+</ol>
+
+    <h5 class="hidden-xs"><span class="package-name">kohi_manager</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="core_config_constants_app_constants/">core/config/constants/app_constants</a></li>
+      <li><a href="core_config_constants_app_enums/">core/config/constants/app_enums</a></li>
+      <li><a href="core_config_constants_shared_preferences_keys/">core/config/constants/shared_preferences_keys</a></li>
+      <li><a href="core_config_fonts_app_text_style/">core/config/fonts/app_text_style</a></li>
+      <li><a href="core_config_theme_color_dark_theme/">core/config/theme/color/dark_theme</a></li>
+      <li><a href="core_config_theme_color_light_theme/">core/config/theme/color/light_theme</a></li>
+      <li><a href="core_config_theme_controllers_network_controller_network_controller/">core/config/theme/controllers/network_controller/network_controller</a></li>
+      <li><a href="core_error_no_routes_error/">core/error/no_routes_error</a></li>
+      <li><a href="core_error_screen_error/">core/error/screen_error</a></li>
+      <li><a href="core_extensions_date_format_extension/">core/extensions/date_format_extension</a></li>
+      <li><a href="core_extensions_navigetion_extensions/">core/extensions/navigetion_extensions</a></li>
+      <li><a href="core_helpers_font_weight_helper/">core/helpers/font_weight_helper</a></li>
+      <li><a href="core_helpers_formating/">core/helpers/formating</a></li>
+      <li><a href="core_locals_logic_cubit_locals_cubit/">core/locals/logic/cubit/locals_cubit</a></li>
+      <li><a href="core_logic_order_order_bloc/">core/logic/order/order_bloc</a></li>
+      <li><a href="core_logic_order_order_event/">core/logic/order/order_event</a></li>
+      <li><a href="core_logic_theme_cubit_theme_cubit/">core/logic/theme/cubit/theme_cubit</a></li>
+      <li><a href="core_logic_theme_cubit_theme_shared_preferences/">core/logic/theme/cubit/theme_shared_preferences</a></li>
+      <li><a href="core_logic_theme_cubit_theme_state/">core/logic/theme/cubit/theme_state</a></li>
+      <li><a href="core_logic_theme_helper_theme_toggle_helper/">core/logic/theme/helper/theme_toggle_helper</a></li>
+      <li><a href="core_models_drink_drink/">core/models/drink/drink</a></li>
+      <li><a href="core_models_drink_drinks/">core/models/drink/drinks</a></li>
+      <li><a href="core_models_order_order/">core/models/order/order</a></li>
+      <li><a href="core_models_order_order_state/">core/models/order/order_state</a></li>
+      <li><a href="core_models_sales_report_sales_report/">core/models/sales_report/sales_report</a></li>
+      <li><a href="core_routing_app_router/">core/routing/app_router</a></li>
+      <li><a href="core_routing_routes/">core/routing/routes</a></li>
+      <li><a href="core_services_order_repo_order_repo/">core/services/order_repo/order_repo</a></li>
+      <li><a href="core_services_url_run_services_url_run_services/">core/services/url_run_services/url_run_services</a></li>
+      <li><a href="core_shared_preferences_global_shared_preferences_global/">core/shared_preferences_global/shared_preferences_global</a></li>
+      <li><a href="core_widgets_app_bar_components_action_drawer_icons/">core/widgets/app_bar_components/action_drawer_icons</a></li>
+      <li><a href="core_widgets_app_bar_components_app_bar/">core/widgets/app_bar_components/app_bar</a></li>
+      <li><a href="core_widgets_app_bar_components_side_page_app_bar/">core/widgets/app_bar_components/side_page_app_bar</a></li>
+      <li><a href="core_widgets_app_bar_components_sliver_app_bar_component/">core/widgets/app_bar_components/sliver_app_bar_component</a></li>
+      <li><a href="core_widgets_app_container_component_app_container_component/">core/widgets/app_container_component/app_container_component</a></li>
+      <li><a href="core_widgets_app_divider_components_full_app_divider_components/">core/widgets/app_divider_components/full_app_divider_components</a></li>
+      <li><a href="core_widgets_app_drawer_drawer/">core/widgets/app_drawer/drawer</a></li>
+      <li><a href="core_widgets_app_toast_app_toast/">core/widgets/app_toast/app_toast</a></li>
+      <li><a href="core_widgets_button_components_elevated_button_components_elevated_button_component/">core/widgets/button_components/elevated_button_components/elevated_button_component</a></li>
+      <li><a href="core_widgets_button_components_elevated_button_components_elevated_button_icon_component/">core/widgets/button_components/elevated_button_components/elevated_button_icon_component</a></li>
+      <li><a href="core_widgets_button_components_elevated_button_components_elevated_outline_button_component/">core/widgets/button_components/elevated_button_components/elevated_outline_button_component</a></li>
+      <li><a href="core_widgets_button_components_filled_button_components_filled_button_icon_component/">core/widgets/button_components/filled_button_components/filled_button_icon_component</a></li>
+      <li><a href="core_widgets_button_components_icon_button_components_icon_button_component/">core/widgets/button_components/icon_button_components/icon_button_component</a></li>
+      <li><a href="core_widgets_button_components_icon_button_components_icon_button_filled_component/">core/widgets/button_components/icon_button_components/icon_button_filled_component</a></li>
+      <li><a href="core_widgets_button_components_icon_button_components_icon_button_filledtonal_component/">core/widgets/button_components/icon_button_components/icon_button_filledtonal_component</a></li>
+      <li><a href="core_widgets_button_components_icon_button_components_icon_button_outline_component/">core/widgets/button_components/icon_button_components/icon_button_outline_component</a></li>
+      <li><a href="core_widgets_button_components_icon_button_components_side_page_app_bar_icon_button/">core/widgets/button_components/icon_button_components/side_page_app_bar_icon_button</a></li>
+      <li><a href="core_widgets_button_components_text_button_components_text_button_component/">core/widgets/button_components/text_button_components/text_button_component</a></li>
+      <li><a href="core_widgets_button_components_text_button_components_text_button_icon_component/">core/widgets/button_components/text_button_components/text_button_icon_component</a></li>
+      <li><a href="core_widgets_d/">core/widgets/d</a></li>
+      <li><a href="core_widgets_dropdown_button_form_field_components_dropdown_button_form_field_component/">core/widgets/dropdown_button_form_field_components/dropdown_button_form_field_component</a></li>
+      <li><a href="core_widgets_list_tile_components_list_tile_component/">core/widgets/list_tile_components/list_tile_component</a></li>
+      <li><a href="core_widgets_list_tile_components_list_tile_icon_component/">core/widgets/list_tile_components/list_tile_icon_component</a></li>
+      <li><a href="core_widgets_list_tile_components_list_tile_widget_component/">core/widgets/list_tile_components/list_tile_widget_component</a></li>
+      <li><a href="core_widgets_profile_page_item_component_profile_page_item_component/">core/widgets/profile_page_item_component/profile_page_item_component</a></li>
+      <li><a href="core_widgets_searchbar_component_searchbar_component/">core/widgets/searchbar_component/searchbar_component</a></li>
+      <li><a href="core_widgets_svg_component_svg_component/">core/widgets/svg_component/svg_component</a></li>
+      <li><a href="core_widgets_text_form_field_components_text_form_field_component/">core/widgets/text_form_field_components/text_form_field_component</a></li>
+      <li><a href="core_widgets_textfield_components_textfield_component/">core/widgets/textfield_components/textfield_component</a></li>
+      <li><a href="core_widgets_textfield_components_textfield_password_component/">core/widgets/textfield_components/textfield_password_component</a></li>
+      <li><a href="core_widgets_textfield_components_textfield_phone_component/">core/widgets/textfield_components/textfield_phone_component</a></li>
+      <li><a href="kohi_manager_app/">kohi_manager_app</a></li>
+      <li><a href="l10n_app_localizations/">l10n/app_localizations</a></li>
+      <li><a href="l10n_app_localizations_en/">l10n/app_localizations_en</a></li>
+      <li><a href="main/">main</a></li>
+      <li><a href="mod_add_order_screen_add_order_screen/">mod/add_order_screen/add_order_screen</a></li>
+      <li><a href="mod_kohi_main_screen_page_kohi_main_screen/">mod/kohi_main_screen/page/kohi_main_screen</a></li>
+      <li><a href="mod_order_dash_board_order_dash_board/">mod/order_dash_board/order_dash_board</a></li>
+      <li><a href="mod_order_dash_board_widgets_order_card/">mod/order_dash_board/widgets/order_card</a></li>
+      <li><a href="mod_report_screen_report_screen/">mod/report_screen/report_screen</a></li>
+      <li><a href="mod_report_screen_widgets_drink_stats_card/">mod/report_screen/widgets/drink_stats_card</a></li>
+      <li><a href="mod_report_screen_widgets_report_card/">mod/report_screen/widgets/report_card</a></li>
+</ol>
+
+  </div>
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div>
+</main>
+<footer>
+  <span class="no-break">
+    kohi_manager
+      1.0.0+1
+  </span>
+  
+</footer>
+
+
+<script src="static-assets/highlight.pack.js?v1"></script>
+<script src="static-assets/docs.dart.js"></script>
+
+</body>
+</html>
+
