@@ -1,3 +1,5 @@
+/*************  ✨ Windsurf Command 🌟  *************/
+## Screen Shots
 <h1 align="center">Kohi Manager</h1>
 <p align="center">
   <img src="https://socialify.git.ci/MostafaSensei106/Kohi-Manager/image?custom_language=Flutter&font=KoHo&language=1&logo=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F138288138%3Fv%3D4&name=1&owner=1&pattern=Floating+Cogs&theme=Light" alt="Kohi Manager Logo">
@@ -60,6 +62,13 @@ Perfect for Cairo's vibrant café culture, supporting traditional drinks like sh
 - **Type Safety**: Comprehensive null safety implementation
 
 ---
+## 📱 Application UI Screenshots
+
+| Dashboard | Add Order | Sales Report |
+|-----------------|---------------|------------|
+| ![Dashboard](doc/Imges/Screenshots/1.jpg) | ![Order Details](doc/Imges/Screenshots/2.jpg) | ![Add Order](doc/Imges/Screenshots/3.jpg) |
+
+
 
 ## Installation
 
@@ -148,9 +157,6 @@ Smart Ahwa Manager follows clean architecture principles with clear separation o
 - **Views**: Responsive UI components with modern design
 
 ---
-
-## 📋 Usage Examples
-
 ### 🏪 Basic Café Operations
 ```dart
 // Adding a traditional shai order
@@ -270,3 +276,5 @@ See the [LICENSE](LICENSE) file for full details.
   Made with ❤️
   by <a href="https://github.com/MostafaSensei106">Mostafa Sensei106</a>
 </p>
+
+/*******  71aa2850-5330-4b34-9ba1-417627ff87ae  *******/z
